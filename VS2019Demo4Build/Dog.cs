@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.IO;
+using System.Web;
+using System.Text;
 
 namespace VS2019Demo4Build
 {
@@ -8,20 +10,22 @@ namespace VS2019Demo4Build
     {
         public void EatBreakfast()
         {
+            Banana banana;
             Meat meat = new Meat();
-            Eat(meat, DateTime.Now);
+            this.Eat(meat, (DateTime)(DateTime.Now));
         }
 
         public void EatLunch()
         {
             Banana banana = new Banana();
-            Eat(banana, DateTime.Now);
+            Meat meat;
+            this.Eat(banana, DateTime.Now);
         }
 
         public void EatDinner()
         {
             Feed feed = new Feed();
-            Eat(feed, DateTime.Now);
+
         }
 
         public void Bark() { }
@@ -36,5 +40,5 @@ namespace VS2019Demo4Build
             else
                 return false;
         }
-    }       
+    }
 }
