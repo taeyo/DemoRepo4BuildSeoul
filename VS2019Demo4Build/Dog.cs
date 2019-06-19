@@ -36,7 +36,5 @@ namespace VS2019Demo4Build
             else
                 return false;
         }
-
-
-    }
+    }       
 }
