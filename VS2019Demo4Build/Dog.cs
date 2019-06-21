@@ -33,7 +33,7 @@ namespace VS2019Demo4Build
         public void Poo() { }
         public void Sleep() { }
 
-        private bool Eat(IFood food, DateTime datetime)
+        public bool Eat(IFood food, DateTime datetime)
         {
             if (food.IsHealty && datetime >= DateTime.UtcNow)
                 return true;

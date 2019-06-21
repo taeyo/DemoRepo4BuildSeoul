@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 
 namespace VS2019Demo4Build
 {
@@ -9,16 +11,22 @@ namespace VS2019Demo4Build
             string str1 = "Hello Build";
             string str2 = "Hi Build";
             string str3 = "Hey Build";
+            var list = new List<string>() { "a", "b" };
 
             Console.WriteLine("-----------------");
 
             //Demo1 : Intelli code 데모
-            //ex1.
+            //str1.
+           
+            for(var i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
 
             _ = str1.Replace("Build", "Seoul");
             _ = str3.Replace("Build", "Seoul");
             //Demo2 : context-aware 코드 완성
-
+            
             Console.WriteLine("-----------------");
 
             _ = str1.ToLower();
