@@ -6,7 +6,7 @@ using System.Text;
 
 namespace VS2019Demo4Build
 {
-    public class Dog : IAnimal
+    public class Dog
     {
         public void EatBreakfast()
         {
