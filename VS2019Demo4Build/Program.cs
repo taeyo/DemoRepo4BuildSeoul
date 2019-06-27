@@ -16,6 +16,7 @@ namespace VS2019Demo4Build
             Console.WriteLine("-----------------");
 
             //Demo1 : Intelli code 데모
+            //IntelliCode trains across 2,000 open-source projects on GitHub—each with over 100 stars—to generate its recommendations.
             //list
            
             for(var i = 0; i < list.Count; i++)   //.Count
