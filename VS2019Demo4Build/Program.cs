@@ -16,22 +16,24 @@ namespace VS2019Demo4Build
             Console.WriteLine("-----------------");
 
             //Demo1 : Intelli code 데모
-            //str1.
+            //list
            
-            for(var i = 0; i < list.Count; i++)
+            for(var i = 0; i < list.Count; i++)   //.Count
             {
                 Console.WriteLine(list[i]);
             }
 
+            //Demo2 : context-aware 코드 완성
             _ = str1.Replace("Build", "Seoul");
             _ = str3.Replace("Build", "Seoul");
-            //Demo2 : context-aware 코드 완성
-            
+                        
             Console.WriteLine("-----------------");
 
+            //Demo2 : context - aware code completions
             _ = str1.ToLower();
             _ = str2.ToLower();
-            //Demo2 : context - aware code completions
+            
+
 
             Dog dog1 = new Dog();
             Dog dog2 = new Dog();

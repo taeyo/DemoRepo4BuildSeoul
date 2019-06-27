@@ -28,11 +28,6 @@ namespace VS2019Demo4Build
 
         }
 
-        public void Bark() { }
-        public void Pee() { }
-        public void Poo() { }
-        public void Sleep() { }
-
         public bool Eat(IFood food, DateTime datetime)
         {
             if (food.IsHealty && datetime >= DateTime.UtcNow)
@@ -40,5 +35,10 @@ namespace VS2019Demo4Build
             else
                 return false;
         }
+
+        public void Bark() { }
+        public void Pee() { }
+        public void Poo() { }
+        public void Sleep() { }
     }
 }
